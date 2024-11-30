@@ -15,7 +15,7 @@ app.use("/", (req, res)=> {
   res.send("Hello form us");
 })
 
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 
 app.listen(PORT, () => {
